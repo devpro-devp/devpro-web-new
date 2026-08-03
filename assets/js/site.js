@@ -1,4 +1,20 @@
 (() => {
+  const description = document.querySelector('meta[name="description"]')?.content;
+  const canonical = document.querySelector('link[rel="canonical"]')?.href;
+  const upsertMeta = (property, content) => {
+    if (!content) return;
+    let element = document.querySelector(`meta[property="${property}"]`);
+    if (!element) {
+      element = document.createElement('meta');
+      element.setAttribute('property', property);
+      document.head.append(element);
+    }
+    element.content = content;
+  };
+  upsertMeta('og:title', document.title);
+  upsertMeta('og:description', description);
+  upsertMeta('og:type', 'website');
+  upsertMeta('og:url', canonical || window.location.href);
   document.querySelectorAll('.hero .button-secondary').forEach(button => { button.style.background = 'transparent'; });
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('[data-menu-toggle]');
