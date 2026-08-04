@@ -1,4 +1,4 @@
-﻿(() => {
+(() => {
   const description = document.querySelector('meta[name="description"]')?.content;
   const canonical = document.querySelector('link[rel="canonical"]')?.href;
   const upsertMeta = (property, content) => {
@@ -58,7 +58,7 @@
     const subject = encodeURIComponent(`Project Brief DevPro — ${company || name}`);
     const body = encodeURIComponent(`Nama: ${name}\nPerusahaan: ${company}\nEmail/Telepon: ${email}\nArea kebutuhan: ${service}\n\nRingkasan kebutuhan:\n${needs}`);
     const status = event.currentTarget.querySelector('[data-form-status]');
-    if (status) status.textContent = 'Membuka email untuk mengirim project brief Andaâ€¦';
+    if (status) status.textContent = 'Membuka email untuk mengirim project brief Anda...';
     window.location.href = `mailto:contact@devpro.co.id?subject=${subject}&body=${body}`;
   });
 })();
