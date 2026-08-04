@@ -173,8 +173,126 @@ body {
   margin: 0;
 }
 
+.pricing-section {
+  background: #f4f8fd;
+}
+
+.pricing-intro {
+  color: #4d5f78;
+  line-height: 1.75;
+  margin: 18px 0 0;
+  max-width: 760px;
+}
+
+.pricing-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 36px;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #d9e4f5;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(17, 46, 88, .06);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px;
+}
+
+.pricing-icon {
+  align-items: center;
+  background: #eaf3ff;
+  border-radius: 10px;
+  color: var(--blue);
+  display: flex;
+  height: 38px;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 38px;
+}
+
+.pricing-icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.pricing-card h3 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1.28;
+  margin: 0;
+}
+
+.pricing-label {
+  color: var(--muted);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin: 18px 0 3px;
+  text-transform: uppercase;
+}
+
+.pricing-price {
+  color: var(--blue);
+  font-size: 1.42rem;
+  font-weight: 850;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pricing-card ul {
+  color: #4d5f78;
+  display: grid;
+  font-size: .86rem;
+  gap: 8px;
+  line-height: 1.5;
+  list-style: none;
+  margin: 20px 0 24px;
+  padding: 0;
+}
+
+.pricing-card li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.pricing-card li::before {
+  color: var(--success);
+  content: "✓";
+  font-weight: 850;
+  left: 0;
+  position: absolute;
+}
+
+.pricing-card .button {
+  background: var(--blue);
+  color: #fff;
+  margin-top: auto;
+  width: 100%;
+}
+
+.pricing-card .button:hover {
+  background: #1467d7;
+}
+
+.pricing-disclaimer {
+  color: var(--muted);
+  font-size: .84rem;
+  line-height: 1.65;
+  margin: 24px 0 0;
+  max-width: 860px;
+}
+
 @media (max-width: 900px) {
   .service-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -212,5 +330,14 @@ body {
   .service-columns {
     grid-template-columns: 1fr;
     margin-top: 28px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  .pricing-card {
+    padding: 24px;
   }
 }
