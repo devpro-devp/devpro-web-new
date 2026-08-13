@@ -229,6 +229,16 @@ p, h1, h2, h3, figure { margin-top: 0; }
 .rack-visual { align-self: center; border: 1px solid var(--line-strong); display: grid; gap: 8px; padding: 12px; }
 .rack-visual span { border: 1px solid var(--line); height: 32px; position: relative; }
 .rack-visual span::before { background: var(--blue-700); border-radius: 50%; content: ""; height: 5px; left: 9px; position: absolute; top: 13px; width: 5px; }
+.solution-feature-datacenter { display: flex; flex-direction: column; justify-content: space-between; }
+.data-center-stack { align-items: center; display: grid; grid-template-columns: auto 1fr auto 1fr auto 1fr auto; margin-top: 34px; }
+.data-center-stack span, .integration-rail span { border: 1px solid var(--line-strong); font-family: var(--font-mono); font-size: .62rem; padding: 10px; text-align: center; }
+.data-center-stack i, .integration-rail i { background: var(--blue-700); height: 2px; }
+.solution-feature-integration { display: grid; gap: 36px; }
+.integration-rail { align-items: center; align-self: end; display: grid; grid-template-columns: auto 1fr auto 1fr auto 1fr auto; }
+.industry-coverage { background: var(--paper); }
+.industry-coverage-grid { margin-top: 46px; }
+.industry-coverage-grid .industry { min-height: 210px; }
+.industry-coverage-grid .industry p:not(.technical-label) { color: var(--muted); font-size: .84rem; margin-bottom: 0; }
 .inline-links { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 18px; }
 .inline-links a { color: var(--blue-700); font-size: .86rem; font-weight: 750; }
 
@@ -381,6 +391,26 @@ p, h1, h2, h3, figure { margin-top: 0; }
 .service-offer ul { columns: 2; font-size: .76rem; list-style: none; margin: 0; padding: 0; }
 .service-offer li { margin-bottom: 5px; }
 .service-offer a { align-self: center; color: var(--blue-700); font-size: .83rem; font-weight: 750; min-height: 44px; padding-top: 10px; }
+.isp-service-coverage { background: var(--paper); }
+.service-catalog { border-top: 1px solid var(--line-strong); margin-top: 46px; }
+.service-catalog article { align-items: start; border-bottom: 1px solid var(--line-strong); display: grid; gap: 12px 18px; grid-template-columns: 32px 1fr; padding-block: 24px; }
+.service-catalog article > span, .related-solution-links span { color: var(--blue-700); font-family: var(--font-mono); font-size: .68rem; padding-top: 4px; }
+.service-catalog h3 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 7px; }
+.service-catalog p { color: var(--muted); font-size: .86rem; margin: 0; max-width: 72ch; }
+.service-catalog a { color: var(--blue-700); font-size: .8rem; font-weight: 750; grid-column: 2; min-height: 44px; padding-top: 9px; }
+.isp-use-cases { background: var(--canvas); }
+.isp-context-grid { margin-top: 46px; }
+.isp-assurance { background: var(--paper); }
+.assurance-list { border-top: 1px solid var(--line-strong); }
+.assurance-list article { border-bottom: 1px solid var(--line-strong); padding-block: 22px; }
+.assurance-list span { color: var(--blue-700); font-family: var(--font-mono); font-size: .68rem; text-transform: uppercase; }
+.assurance-list h3 { font-family: var(--font-display); font-size: 1.2rem; margin: 6px 0 8px; }
+.assurance-list p { color: var(--muted); font-size: .86rem; margin: 0; }
+.related-solutions { background: var(--canvas); }
+.related-solution-links { border-top: 1px solid var(--line-strong); }
+.related-solution-links a { align-items: center; border-bottom: 1px solid var(--line-strong); display: grid; gap: 16px; grid-template-columns: 32px 1fr; min-height: 66px; transition: color .18s var(--ease), padding-left .18s var(--ease); }
+.related-solution-links a:hover { color: var(--blue-700); padding-left: 8px; }
+.related-solution-links strong { font-family: var(--font-display); font-size: 1.05rem; }
 
 /* Compatibility layer for existing Network, Starlink, Data Center, Integration pages */
 .eyebrow { color: var(--blue-700); font-size: .76rem; font-weight: 740; margin: 0 0 13px; }
@@ -457,7 +487,8 @@ p, h1, h2, h3, figure { margin-top: 0; }
   .solution-feature-network { grid-column: 1 / -1; grid-template-columns: 1.2fr .8fr; min-height: 310px; }
   .solution-feature-remote { min-height: 470px; }
   .solution-feature-isp { min-height: 470px; }
-  .solution-feature-infra { grid-column: 1 / -1; grid-template-columns: .55fr 1.45fr; }
+  .solution-feature-infra, .solution-feature-datacenter { min-height: 470px; }
+  .solution-feature-integration { grid-column: 1 / -1; grid-template-columns: 1.45fr .55fr; min-height: 310px; }
   .offer-row { align-items: center; grid-template-columns: 1.35fr .8fr .55fr; }
   .case-shell, .architecture-explainer { grid-template-columns: 1.05fr .95fr; }
   .final-cta-shell { align-items: end; grid-template-columns: 1.2fr .8fr; }
@@ -468,6 +499,8 @@ p, h1, h2, h3, figure { margin-top: 0; }
   .buyer-fit-shell { grid-template-columns: .8fr 1.2fr; }
   .isp-option-grid { grid-template-columns: 1fr 1fr; }
   .service-offer { align-items: center; grid-template-columns: 1.2fr .55fr .9fr .45fr; }
+  .service-catalog article { grid-template-columns: 42px 1fr auto; }
+  .service-catalog a { grid-column: auto; }
 }
 
 @media (min-width: 980px) {
@@ -537,6 +570,8 @@ p, h1, h2, h3, figure { margin-top: 0; }
   .isp-option ul, .service-offer ul { columns: 1; }
   .subscriber-flow { grid-template-columns: 1fr; gap: 5px; }
   .subscriber-flow i { height: 16px; justify-self: center; width: 2px; }
+  .data-center-stack, .integration-rail { grid-template-columns: 1fr; gap: 5px; }
+  .data-center-stack i, .integration-rail i { height: 14px; justify-self: center; width: 2px; }
   body.has-sticky-conversion { padding-bottom: calc(72px + env(safe-area-inset-bottom)); }
   .whatsapp-float { bottom: 16px; height: 50px; right: 16px; width: 50px; }
 }
