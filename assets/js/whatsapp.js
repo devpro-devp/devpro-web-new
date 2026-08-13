@@ -28,7 +28,7 @@
     }
   });
 
-  if (!document.querySelector('.whatsapp-float')) {
+  if (!document.querySelector('[data-sticky-conversion]') && !document.querySelector('.whatsapp-float')) {
     document.body.append(link('whatsapp-float', '', 'Diskusi via WhatsApp'));
   }
 })();

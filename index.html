@@ -2,63 +2,353 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/assets/images/favicon/favicon.ico" sizes="any"><link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32.png" sizes="32x32"><link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
-  <meta name="description" content="DevPro adalah Business Technology & Network Infrastructure Partner untuk desain, implementasi, dan managed service infrastruktur digital perusahaan."><meta property="og:image" content="https://devpro.co.id/assets/images/logo/devpro-logo.png"><meta property="og:image:alt" content="DevPro">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DevPro merancang, memasang, dan mengelola internet bisnis, jaringan enterprise, Managed Starlink, data center, dan infrastruktur multi-site.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#07111f">
+  <meta name="theme-color" content="#101820">
   <link rel="canonical" href="https://devpro.co.id/">
-  <link rel="stylesheet" href="assets/css/site.css"><link rel="stylesheet" href="assets/css/refinements.css">
-  <title>DevPro | Business Technology & Network Infrastructure Partner</title>
-  <meta property="og:title" content="DevPro | Infrastructure that keeps business moving">
-  <meta property="og:description" content="Partner teknologi untuk jaringan enterprise, solusi bisnis ISP, managed connectivity, infrastruktur, dan integrasi teknologi.">
+  <link rel="icon" href="/assets/images/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <title>DevPro | Internet Bisnis dan Infrastruktur Jaringan</title>
+  <meta property="og:title" content="DevPro | Internet Bisnis dan Infrastruktur Jaringan">
+  <meta property="og:description" content="Satu partner untuk desain, instalasi, integrasi, monitoring, dan support konektivitas bisnis serta jaringan enterprise.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://devpro.co.id/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"DevPro","url":"https://devpro.co.id/","logo":"https://devpro.co.id/assets/images/logo/devpro-logo.png","description":"Business Technology & Network Infrastructure Partner untuk desain, implementasi, dan managed service infrastruktur digital.","areaServed":"Indonesia","serviceType":["Enterprise Network Infrastructure","ISP Business Solution","Managed Connectivity","Infrastructure & Devices","Data Center","Technology Integration"]}</script>
+  <meta property="og:image" content="https://devpro.co.id/assets/images/logo/devpro-logo.png">
+  <meta property="og:image:alt" content="Logo DevPro">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DevPro | Internet Bisnis dan Infrastruktur Jaringan">
+  <meta name="twitter:description" content="Konektivitas dan jaringan bisnis yang dirancang, dipasang, dan dikelola sebagai satu sistem.">
+  <meta name="twitter:image" content="https://devpro.co.id/assets/images/logo/devpro-logo.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"ProfessionalService","name":"DevPro","url":"https://devpro.co.id/","logo":"https://devpro.co.id/assets/images/logo/devpro-logo.png","description":"Business Technology & Network Infrastructure Partner untuk desain, implementasi, dan managed service infrastruktur digital.","areaServed":"Indonesia","serviceType":["Enterprise Network Infrastructure","ISP Business Solution","Managed Connectivity","Infrastructure & Devices","Data Center","Technology Integration"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apakah DevPro adalah ISP?","acceptedAnswer":{"@type":"Answer","text":"Bukan. DevPro merancang dan mengelola lingkungan konektivitas serta jaringan, termasuk koordinasi dengan provider sesuai kebutuhan pelanggan."}},{"@type":"Question","name":"Apakah DevPro dapat menangani lokasi remote?","acceptedAnswer":{"@type":"Answer","text":"Ya. Ruang lingkup dapat mencakup assessment, implementasi konektivitas berbasis Starlink, integrasi LAN, failover, monitoring, dan operational support."}},{"@type":"Question","name":"Bagaimana memulai konsultasi?","acceptedAnswer":{"@type":"Answer","text":"Bagikan lokasi, kondisi jaringan saat ini, layanan yang harus dijaga, dan target waktu. DevPro akan membantu menentukan langkah assessment yang relevan."}}]}]}</script>
 </head>
-<body>
+<body class="home-page">
   <a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="index.html" aria-label="DevPro beranda"><img src="/assets/images/logo/devpro-logo.png" alt="DevPro" width="150" height="60" style="width:150px;height:60px;object-fit:cover;object-position:center"></a>
-      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="primary-menu"><span class="sr-only">Buka menu</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="brand" href="index.html" aria-label="DevPro beranda">
+        <img src="/assets/images/logo/devpro-logo.png" alt="DevPro" width="150" height="60">
+      </a>
+      <button class="menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only" data-menu-label>Buka menu</span>
+        <span aria-hidden="true" class="menu-toggle-lines"></span>
+      </button>
       <nav class="nav-links" id="primary-menu" data-menu aria-label="Navigasi utama">
-        <a href="index.html" aria-current="page">Beranda</a><a href="#solutions">Solusi</a><a href="#approach">Cara kerja</a><a href="#industries">Industri</a><a href="#insights">FAQ</a>
+        <a href="#solutions">Solusi</a>
+        <a href="#industries">Kebutuhan</a>
+        <a href="#approach">Cara kerja</a>
+        <a href="#investment">Investasi</a>
+        <a href="#architecture">Contoh arsitektur</a>
       </nav>
-      <button class="button button-primary nav-cta" data-open-lead>Mulai project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a class="button button-primary nav-cta" href="https://wa.me/62822104060?text=Halo%20DevPro%2C%20saya%20ingin%20mendiskusikan%20kebutuhan%20infrastruktur%20teknologi%20dan%20jaringan." target="_blank" rel="noopener noreferrer">Konsultasi</a>
     </div>
   </header>
+
   <main id="main-content">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Business Technology &amp; Network Infrastructure Partner</p>
-          <h1>Infrastruktur yang membuat bisnis Anda <em>tetap bergerak.</em></h1>
-          <p class="hero-copy">DevPro merancang, mengimplementasikan, dan mengelola fondasi teknologi yang andal—dari core network dan konektivitas lokasi terpencil hingga perangkat, data center, dan integrasi sistem.</p>
-          <div class="hero-actions"><button class="button button-primary" data-open-lead>Diskusikan kebutuhan Anda <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button><a class="button button-secondary" href="#solutions">Lihat kapabilitas</a></div>
-          <div class="hero-points"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Design to operate</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Vendor-aware engineering</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Built for critical sites</span></div>
+    <section class="hero hero-v2" aria-labelledby="home-title">
+      <div class="container hero-shell">
+        <div class="hero-content">
+          <div class="context-line" aria-label="Internet bisnis, network, dan managed infrastructure">
+            <span>Internet bisnis</span><span>Network</span><span>Managed Infrastructure</span>
+          </div>
+          <h1 id="home-title">Internet bisnis dan jaringan yang tetap bekerja saat operasional tidak boleh berhenti.</h1>
+          <p class="hero-copy">Dari konektivitas dan Managed Starlink hingga jaringan kantor, data center, dan multi-site. Satu partner untuk desain, instalasi, monitoring, dan support.</p>
+          <div class="hero-commercial" aria-label="Estimasi investasi awal">
+            <span>Network Assessment</span>
+            <strong>Mulai dari Rp 4.500.000</strong>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" data-whatsapp-cta href="https://wa.me/62822104060?text=Halo%20DevPro%2C%20saya%20ingin%20konsultasi%20mengenai%20kebutuhan%20internet%20bisnis%20dan%20jaringan." target="_blank" rel="noopener noreferrer">Konsultasi kebutuhan</a>
+            <a class="text-link" href="#solutions">Lihat solusi <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="commercial-note">Konsultasi sebelum pembelian. Harga final mengikuti lokasi dan ruang lingkup.</p>
+        </div>
+
+        <figure class="topology topology-hero">
+          <figcaption>
+            <span>Contoh arsitektur konektivitas</span>
+            <strong>Satu rancangan, beberapa lokasi</strong>
+          </figcaption>
+          <svg viewBox="0 0 620 420" role="img" aria-labelledby="topology-title topology-desc">
+            <title id="topology-title">Topologi jaringan bisnis multi-site</title>
+            <desc id="topology-desc">Kantor pusat terhubung ke cabang, cloud, data center, dan remote site melalui jaringan yang dirancang dan dikelola DevPro.</desc>
+            <g class="topology-grid" aria-hidden="true">
+              <path d="M20 70H600M20 170H600M20 270H600M20 370H600M90 20V400M210 20V400M330 20V400M450 20V400M570 20V400"/>
+            </g>
+            <g class="topology-routes" aria-hidden="true">
+              <path class="route route-primary" d="M164 202H290"/>
+              <path class="route" d="M370 202H492V108"/>
+              <path class="route" d="M370 202H492V300"/>
+              <path class="route" d="M330 242V332"/>
+              <path class="route route-backup" d="M164 224C230 322 405 350 492 300"/>
+            </g>
+            <g class="site-node site-node-main">
+              <rect x="54" y="166" width="110" height="72" rx="8"/>
+              <text x="72" y="196">KANTOR PUSAT</text>
+              <text class="node-meta" x="72" y="217">Core network</text>
+            </g>
+            <g class="network-core">
+              <circle cx="330" cy="202" r="42"/>
+              <circle cx="330" cy="202" r="8"/>
+              <text x="285" y="270">DEVPRO NETWORK</text>
+            </g>
+            <g class="site-node">
+              <rect x="492" y="72" width="92" height="64" rx="8"/>
+              <text x="510" y="100">CABANG</text>
+              <text class="node-meta" x="510" y="119">Primary link</text>
+            </g>
+            <g class="site-node">
+              <rect x="492" y="268" width="92" height="64" rx="8"/>
+              <text x="510" y="296">REMOTE</text>
+              <text class="node-meta" x="510" y="315">Starlink</text>
+            </g>
+            <g class="site-node">
+              <rect x="284" y="332" width="92" height="52" rx="8"/>
+              <text x="306" y="363">CLOUD</text>
+            </g>
+            <g class="route-packets" aria-hidden="true">
+              <circle cx="220" cy="202" r="5"/><circle cx="430" cy="202" r="5"/><circle cx="330" cy="298" r="5"/>
+            </g>
+          </svg>
+          <div class="topology-legend" aria-label="Cakupan delivery">
+            <span>Design</span><span>Deploy</span><span>Monitor</span><span>Support</span>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section problem-index" id="industries" aria-labelledby="problem-title">
+      <div class="container editorial-shell">
+        <header class="editorial-heading">
+          <p class="section-kicker">Mulai dari masalah operasional</p>
+          <h2 id="problem-title">Apa yang sedang Anda coba selesaikan?</h2>
+          <p>Anda tidak perlu mengetahui nama produknya. Mulai dari kondisi lokasi, risiko, dan layanan yang harus tetap berjalan.</p>
+        </header>
+        <ol class="problem-rows">
+          <li><a href="isp.html"><span>01</span><strong>Kantor atau cabang membutuhkan internet yang lebih stabil.</strong><small>ISP Business Solution</small></a></li>
+          <li><a href="starlink.html"><span>02</span><strong>Lokasi baru harus online tanpa menunggu pembangunan fiber.</strong><small>Managed Connectivity</small></a></li>
+          <li><a href="network.html"><span>03</span><strong>Jaringan antar lokasi sulit dipantau dan dikelola.</strong><small>Enterprise Network</small></a></li>
+          <li><a href="starlink.html"><span>04</span><strong>Operasi membutuhkan backup saat link utama terganggu.</strong><small>Failover dan Backup Connectivity</small></a></li>
+          <li><a href="#approach"><span>05</span><strong>Perangkat, provider, dan implementasi tersebar di banyak vendor.</strong><small>Single accountable delivery</small></a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section solution-map" id="solutions" aria-labelledby="solution-title">
+      <div class="container">
+        <header class="section-heading section-heading-wide">
+          <p class="section-kicker">Solusi DevPro</p>
+          <h2 id="solution-title">Konektivitas, perangkat, dan operasi dalam satu rancangan.</h2>
+        </header>
+
+        <div class="solution-editorial-grid">
+          <article class="solution-feature solution-feature-network">
+            <div class="solution-copy">
+              <p class="technical-label">Enterprise Network</p>
+              <h3>Hubungkan kantor, cabang, cloud, dan data center tanpa kehilangan kendali.</h3>
+              <p>Assessment, routing, switching, wireless, fiber backbone, high availability, migration, dan dokumentasi operasional.</p>
+              <a class="text-link" href="network.html">Lihat Enterprise Network <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="network-strip" aria-hidden="true"><i></i><span>LAN</span><i></i><span>WAN</span><i></i><span>CORE</span><i></i></div>
+          </article>
+
+          <article class="solution-feature solution-feature-remote">
+            <div class="remote-signal" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+            <div class="solution-copy">
+              <p class="technical-label">Managed Connectivity</p>
+              <h3>Hubungkan lokasi remote dan siapkan jalur cadangan.</h3>
+              <p>Managed Starlink, site assessment, installation, routing, SD-WAN, failover, monitoring, dan operational support.</p>
+              <a class="text-link" href="starlink.html">Lihat Managed Connectivity <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="solution-feature solution-feature-isp">
+            <div class="solution-copy">
+              <p class="technical-label">ISP Business Solution</p>
+              <h3>Susun fondasi ISP yang dapat tumbuh dan tetap dapat dioperasikan.</h3>
+              <p>Perencanaan jaringan, ASN, IP address, BGP, PPPoE, billing, capacity planning, dan dokumentasi teknis.</p>
+              <a class="text-link" href="isp.html">Lihat ISP Business Solution <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="signal-metrics" aria-label="Area solusi ISP"><span>ASN</span><span>IPv4 / IPv6</span><span>BGP</span><span>PPPoE</span></div>
+          </article>
+
+          <article class="solution-feature solution-feature-infra">
+            <div class="rack-visual" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            <div class="solution-copy">
+              <p class="technical-label">Infrastructure & Integration</p>
+              <h3>Bangun fondasi fisik dan integrasi di belakang layanan digital.</h3>
+              <p>Server room, rack, UPS, cooling, perangkat, data center, API, automation, IoT, dan platform integration.</p>
+              <div class="inline-links"><a href="datacenter.html">Data Center</a><a href="integration.html">Technology Integration</a></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <section class="trust-bar" aria-label="Nilai DevPro"><div class="container trust-inner"><span class="trust-label">Satu partner untuk keputusan teknis yang terhubung.</span><div class="trust-items"><span class="trust-item">Assess</span><span class="trust-item">Architect</span><span class="trust-item">Implement</span><span class="trust-item">Integrate</span><span class="trust-item">Operate</span></div></div></section>
-    <section class="section services" id="solutions">
-      <div class="container"><div class="section-head"><div><p class="eyebrow">Kapabilitas utama</p><h2 class="section-title">Dari kebutuhan bisnis ke infrastruktur yang siap bekerja.</h2><p class="section-copy">Kami tidak menjual konektivitas sebagai ISP atau membangun aplikasi sebagai software house. DevPro bertindak sebagai partner engineering untuk menyatukan teknologi, perangkat, dan operasi jaringan.</p></div></div>
-      <div class="service-grid">
-        <a class="service-card" href="network.html"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4"/></svg></span><h3>Enterprise Network</h3><p>LAN/WAN, routing, switching, security perimeter, dan redundansi untuk operasi multi-site.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="service-card" href="isp.html"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 18h16M6 18V9l6-4 6 4v9M9 18v-4h6v4"/></svg></span><h3>ISP Business Solution</h3><p>Arsitektur dan optimasi teknis untuk operator yang sedang membangun atau mengembangkan bisnis jaringan.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="service-card" href="starlink.html"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 0 1 18 0M6 12a6 6 0 0 1 12 0M9 12a3 3 0 0 1 6 0"/><path d="M12 12v7"/></svg></span><h3>Managed Connectivity</h3><p>Implementasi dan pengelolaan konektivitas untuk site remote, termasuk lingkungan jaringan berbasis Starlink.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="service-card" href="datacenter.html"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="7" rx="1"/><rect x="4" y="14" width="16" height="7" rx="1"/><path d="M8 6.5h.01M8 17.5h.01"/></svg></span><h3>Infrastructure &amp; Devices</h3><p>Perangkat enterprise, server room, dan fondasi fisik yang tepat untuk kebutuhan operasional.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="service-card" href="datacenter.html#data-center"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><h3>Data Center</h3><p>Perencanaan kebutuhan data center, colocation, daya, cooling, dan kesiapan operasional.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-        <a class="service-card" href="integration.html"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m8.7 10.8 6.6-3.6M8.7 13.2l6.6 3.6"/></svg></span><h3>Technology Integration</h3><p>Menghubungkan konektivitas, perangkat, platform, dan operasi menjadi satu lingkungan kerja.</p><span class="service-link">Eksplor solusi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
-      </div></div>
+
+    <section class="section accountability" id="approach" aria-labelledby="accountability-title">
+      <div class="container accountability-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Satu pihak yang bertanggung jawab</p>
+          <h2 id="accountability-title">Dari kondisi site sampai jaringan siap dioperasikan.</h2>
+          <p>DevPro menyatukan keputusan yang biasanya tersebar antara consultant, provider, vendor perangkat, installer, dan tim operasional.</p>
+        </header>
+        <ol class="delivery-line">
+          <li><span>Assess</span><strong>Site dan kebutuhan</strong><p>Kondisi aktual, risiko, kapasitas, dan layanan yang harus dijaga.</p></li>
+          <li><span>Design</span><strong>Arsitektur jaringan</strong><p>Topologi, perangkat, provider, keamanan dasar, dan failover.</p></li>
+          <li><span>Source</span><strong>Hardware dan konektivitas</strong><p>Spesifikasi dan koordinasi pengadaan sesuai desain.</p></li>
+          <li><span>Deploy</span><strong>Instalasi dan pengujian</strong><p>Staging, konfigurasi, cutover, acceptance test, dan rollback.</p></li>
+          <li><span>Operate</span><strong>Monitoring dan support</strong><p>Dokumentasi, handover, maintenance, dan eskalasi teknis.</p></li>
+        </ol>
+      </div>
     </section>
-    <section class="section"><div class="container problem-grid"><div><p class="eyebrow">Ketika infrastruktur menjadi hambatan</p><h2 class="section-title">Kegagalan kecil di jaringan bisa berubah menjadi biaya bisnis yang besar.</h2></div><div class="problem-list"><article class="problem"><h3>Keputusan vendor berjalan sendiri-sendiri</h3><p>Perangkat, konektivitas, dan sistem sering dibeli terpisah tanpa desain yang menyatukan risiko dan operasi.</p></article><article class="problem"><h3>Site baru harus hidup tanpa mengganggu operasi</h3><p>Ekspansi membutuhkan desain yang jelas, staging yang disiplin, dan rencana cutover yang bisa dipertanggungjawabkan.</p></article><article class="problem"><h3>Konektivitas remote tidak cukup hanya &ldquo;tersambung&rdquo;</h3><p>Lokasi kritikal membutuhkan integrasi LAN, keamanan, failover, dan model pengelolaan yang sesuai dengan kondisi lapangan.</p></article><article class="problem"><h3>Tim internal butuh partner yang berbicara hasil</h3><p>DevPro menerjemahkan kebutuhan operasional ke keputusan engineering yang dapat dieksekusi.</p></article></div></div></section>
-    <section class="section delivery" id="approach"><div class="container"><p class="eyebrow">Cara kerja DevPro</p><h2 class="section-title">Engineering yang dimulai dari konteks bisnis, bukan dari katalog produk.</h2><p class="section-copy">Setiap engagement dirancang agar keputusan teknis, implementasi, dan kesiapan operasi memiliki satu arah.</p><div class="delivery-grid"><article class="delivery-card"><span class="delivery-step">01 / DISCOVER</span><h3>Memahami konteks</h3><p>Mengurai tujuan, site, risiko, dependensi, dan kondisi infrastruktur saat ini.</p></article><article class="delivery-card"><span class="delivery-step">02 / DESIGN</span><h3>Menyusun arsitektur</h3><p>Menetapkan opsi teknis, prioritas, spesifikasi, dan tahapan implementasi.</p></article><article class="delivery-card"><span class="delivery-step">03 / DELIVER</span><h3>Mengeksekusi dengan rapi</h3><p>Koordinasi pengadaan, staging, instalasi, pengujian, dan handover yang terdokumentasi.</p></article><article class="delivery-card"><span class="delivery-step">04 / ENABLE</span><h3>Menyiapkan operasi</h3><p>Menyelaraskan monitoring, SOP, knowledge transfer, dan kebutuhan managed service bila relevan.</p></article></div></div></section>
-    <section class="section" id="industries"><div class="container"><p class="eyebrow">Lingkungan yang kami pahami</p><h2 class="section-title">Dirancang untuk organisasi dengan operasi nyata di lapangan.</h2><div class="industry-grid"><article class="industry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-5h6v5"/></svg><h3>Multi-site enterprise</h3></article><article class="industry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 20h18M5 20V9h14v11M8 9V5h8v4M8 13h.01M12 13h.01M16 13h.01"/></svg><h3>Operator &amp; service provider</h3></article><article class="industry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 21 10 3h4l6 18M7 14h10"/></svg><h3>Remote &amp; industrial sites</h3></article><article class="industry"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21V3M5 9l7-6 7 6M6 21h12"/></svg><h3>Critical facilities</h3></article></div></div></section>
-    <section class="section proof"><div class="container"><p class="eyebrow">Prinsip delivery</p><h2 class="section-title">Fondasi yang membuat project lebih terkendali.</h2><div class="proof-grid"><article class="proof-card"><strong>Outcome before product</strong><p>Rekomendasi dimulai dari hasil yang dibutuhkan, bukan dari merek atau perangkat yang ingin dijual.</p></article><article class="proof-card"><strong>Clear technical ownership</strong><p>Ruang lingkup, asumsi, dan titik keputusan dibuat jelas agar semua pihak bergerak dalam rencana yang sama.</p></article><article class="proof-card"><strong>Operationally ready</strong><p>Dokumentasi, pengujian, dan transisi operasi diperlakukan sebagai bagian dari delivery, bukan pekerjaan tambahan.</p></article></div></div></section>
-    <section class="section" id="insights"><div class="container"><p class="eyebrow">Pertanyaan umum</p><h2 class="section-title">Mulai dari percakapan teknis yang tepat.</h2><div class="faq-list"><details class="faq"><summary>Apakah DevPro adalah ISP atau penyedia konektivitas?</summary><p>Bukan. DevPro adalah partner teknologi dan infrastruktur. Kami membantu desain, implementasi, integrasi, dan pengelolaan lingkungan jaringan sesuai lingkup pekerjaan—termasuk koordinasi dengan provider bila diperlukan.</p></details><details class="faq"><summary>Apakah DevPro hanya menangani pengadaan perangkat?</summary><p>Tidak. Pengadaan dapat menjadi bagian dari project, namun nilainya ada pada arsitektur, kesiapan implementasi, integrasi, dan kejelasan hasil operasional yang ingin dicapai.</p></details><details class="faq"><summary>Kapan managed connectivity berbasis Starlink relevan?</summary><p>Biasanya ketika site membutuhkan opsi konektivitas di area dengan keterbatasan akses terrestrial. Kelayakannya perlu ditinjau bersama desain jaringan lokal, keamanan, kebutuhan failover, dan kondisi lokasi.</p></details><details class="faq"><summary>Bagaimana memulai diskusi dengan DevPro?</summary><p>Kirimkan ringkasan site, tantangan saat ini, target waktu, dan hasil yang diharapkan. Tim DevPro akan membantu menyusun langkah discovery yang sesuai.</p></details></div></div></section>
-    <section class="section"><div class="container"><div class="cta-panel"><div><p class="eyebrow">Mulai dari kebutuhan Anda</p><h2>Siapkan fondasi teknologi untuk keputusan bisnis berikutnya.</h2><p>Ceritakan konteks project Anda. Kami akan membantu memetakan langkah awal yang paling relevan.</p></div><button class="button button-secondary" data-open-lead>Mulai project brief <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div></section>
+
+    <section class="section investment" id="investment" aria-labelledby="investment-title">
+      <div class="container">
+        <header class="section-heading section-heading-wide">
+          <p class="section-kicker">Commercial entry point</p>
+          <h2 id="investment-title">Mulai dari kebutuhan yang Anda punya sekarang.</h2>
+          <p>Harga berikut merupakan estimasi awal dari layanan yang sudah tersedia di DevPro, bukan harga tetap atau paket e-commerce.</p>
+        </header>
+        <div class="offer-list">
+          <article class="offer-row">
+            <div><p class="technical-label">Enterprise Network</p><h3>Network Assessment</h3><p>Audit topologi, konfigurasi, perangkat, link, risiko, dan rekomendasi awal.</p></div>
+            <div class="offer-fit"><span>Cocok untuk</span><strong>Upgrade, ekspansi, atau gangguan berulang</strong></div>
+            <div class="offer-price"><span>Mulai dari</span><strong>Rp 4.500.000</strong><a href="network.html">Lihat detail</a></div>
+          </article>
+          <article class="offer-row">
+            <div><p class="technical-label">ISP Business Solution</p><h3>Konsultasi ISP</h3><p>Discovery layanan, model jaringan, kebutuhan regulasi, kapasitas, dan roadmap teknis.</p></div>
+            <div class="offer-fit"><span>Cocok untuk</span><strong>ISP baru atau jaringan yang sedang bertumbuh</strong></div>
+            <div class="offer-price"><span>Mulai dari</span><strong>Rp 5.500.000</strong><a href="isp.html">Lihat detail</a></div>
+          </article>
+          <article class="offer-row">
+            <div><p class="technical-label">Managed Connectivity</p><h3>Health Check</h3><p>Pemeriksaan perangkat, kualitas link, LAN, konfigurasi, dan risiko operasional site.</p></div>
+            <div class="offer-fit"><span>Cocok untuk</span><strong>Remote site dan lingkungan berbasis Starlink</strong></div>
+            <div class="offer-price"><span>Mulai dari</span><strong>Rp 3.000.000</strong><a href="starlink.html">Lihat detail</a></div>
+          </article>
+          <article class="offer-row">
+            <div><p class="technical-label">Data Center</p><h3>Server Room Assessment</h3><p>Pemeriksaan rack, power, UPS, cooling, monitoring, dan kesiapan operasi.</p></div>
+            <div class="offer-fit"><span>Cocok untuk</span><strong>Penataan atau pengembangan server room</strong></div>
+            <div class="offer-price"><span>Mulai dari</span><strong>Rp 5.500.000</strong><a href="datacenter.html">Lihat detail</a></div>
+          </article>
+        </div>
+        <p class="pricing-disclaimer">Estimasi investasi bergantung pada ruang lingkup pekerjaan, lokasi, kompleksitas implementasi, kebutuhan bandwidth, perangkat, dan kebutuhan infrastruktur.</p>
+      </div>
+    </section>
+
+    <section class="section operational-proof" aria-labelledby="proof-title">
+      <div class="container proof-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Bukti operasional</p>
+          <h2 id="proof-title">Kepercayaan dibangun dari pekerjaan yang dapat diperiksa.</h2>
+          <p>Tanpa membuat angka atau klaim yang belum terverifikasi, DevPro menunjukkan kualitas delivery melalui artefak yang dapat dipakai tim pelanggan.</p>
+        </header>
+        <div class="evidence-flow">
+          <article><span>01</span><h3>Site survey</h3><p>Kondisi lokasi, jalur, perangkat, risiko, dan kebutuhan layanan.</p></article>
+          <article><span>02</span><h3>Network diagram</h3><p>Topologi aktual dan target yang menjelaskan dependency serta titik kontrol.</p></article>
+          <article><span>03</span><h3>Configured infrastructure</h3><p>Staging, instalasi, konfigurasi, dan hasil pengujian sesuai scope.</p></article>
+          <article><span>04</span><h3>Handover dan monitoring</h3><p>Dokumentasi kondisi akhir, acceptance criteria, dan jalur eskalasi.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section architecture-case" id="architecture" aria-labelledby="case-title">
+      <div class="container case-shell">
+        <div class="case-copy">
+          <p class="section-kicker">Contoh arsitektur, bukan klaim proyek</p>
+          <h2 id="case-title">Menjaga cabang tetap terhubung ketika fiber utama terganggu.</h2>
+          <dl class="case-steps">
+            <div><dt>Business problem</dt><dd>Transaksi dan akses sistem cabang berhenti ketika satu jalur fiber mengalami gangguan.</dd></div>
+            <div><dt>Network design</dt><dd>Primary fiber dipadukan dengan backup connectivity dan routing failover yang dapat diuji.</dd></div>
+            <div><dt>Implementation</dt><dd>DevPro menangani assessment, desain, perangkat edge, integrasi link, pengujian, dan handover.</dd></div>
+            <div><dt>Hasil yang ditargetkan</dt><dd>Waktu gangguan lebih terkendali, status link terlihat, dan tim memiliki prosedur pemulihan yang jelas.</dd></div>
+          </dl>
+        </div>
+        <div class="case-topology" aria-label="Diagram contoh failover cabang">
+          <div class="case-node case-node-source"><span>Kantor Pusat</span><small>Core services</small></div>
+          <div class="case-route case-route-primary"><span>Primary fiber</span></div>
+          <div class="case-route case-route-backup"><span>Backup connectivity</span></div>
+          <div class="case-node case-node-target"><span>Cabang</span><small>Managed edge</small></div>
+          <div class="case-status"><span>Monitor</span><span>Failover test</span><span>Handover</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="insights" aria-labelledby="faq-title">
+      <div class="container faq-shell">
+        <header class="section-heading">
+          <p class="section-kicker">Sebelum memulai</p>
+          <h2 id="faq-title">Pertanyaan yang paling sering menentukan scope.</h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq"><summary>Apakah DevPro adalah ISP?</summary><p>Bukan. DevPro adalah partner engineering yang membantu memilih, merancang, mengintegrasikan, dan mengelola konektivitas sesuai kondisi bisnis dan lokasi.</p></details>
+          <details class="faq"><summary>Apakah DevPro dapat menangani perangkat dan instalasi?</summary><p>Ya. Pengadaan, staging, instalasi, konfigurasi, pengujian, dan handover dapat menjadi bagian scope ketika dibutuhkan.</p></details>
+          <details class="faq"><summary>Bagaimana jika lokasi belum memiliki akses fiber?</summary><p>DevPro dapat menilai alternatif konektivitas, termasuk lingkungan jaringan berbasis Starlink, serta menyiapkan LAN, keamanan dasar, failover, dan model support yang sesuai.</p></details>
+          <details class="faq"><summary>Informasi apa yang dibutuhkan untuk konsultasi awal?</summary><p>Lokasi, jumlah site, kondisi link saat ini, aplikasi penting, target waktu, kendala operasional, dan hasil yang ingin dicapai sudah cukup untuk memulai discovery.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" data-final-cta aria-labelledby="final-title">
+      <div class="container final-cta-shell">
+        <div>
+          <p class="section-kicker">Mulai dari kebutuhan operasional</p>
+          <h2 id="final-title">Ceritakan lokasi dan kebutuhan jaringan Anda.</h2>
+          <p>Tim DevPro membantu menentukan koneksi, perangkat, dan arsitektur yang sesuai sebelum Anda membeli.</p>
+        </div>
+        <div class="final-cta-action">
+          <a class="button button-primary" href="https://wa.me/62822104060?text=Halo%20DevPro%2C%20saya%20ingin%20konsultasi%20mengenai%20lokasi%20dan%20kebutuhan%20jaringan." target="_blank" rel="noopener noreferrer">Konsultasi dengan tim DevPro</a>
+          <span>Tidak tahu produk yang tepat? Mulai dari kondisi operasional Anda.</span>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html" aria-label="DevPro beranda"><img src="/assets/images/logo/devpro-logo.png" alt="DevPro" width="150" height="60" style="width:150px;height:60px;object-fit:cover;object-position:center"></a><p class="footer-copy">Business Technology &amp; Network Infrastructure Partner untuk organisasi yang membutuhkan infrastruktur digital siap bekerja.</p></div><div><p class="footer-heading">Solutions</p><div class="footer-links"><a href="network.html">Enterprise Network</a><a href="isp.html">ISP Business Solution</a><a href="starlink.html">Managed Connectivity</a><a href="datacenter.html">Infrastructure &amp; Data Center</a><a href="integration.html">Technology Integration</a></div></div><div><p class="footer-heading">Start a conversation</p><div class="footer-links"><a href="mailto:contact@devpro.co.id">contact@devpro.co.id</a><a href="#solutions">Explore capabilities</a><button class="button button-plain" data-open-lead>Send project brief &rarr;</button></div></div></div><div class="footer-bottom">&copy; 2024 DevPro. All rights reserved.</div></div></footer>
-  <div class="modal" data-lead-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lead-title"><div class="modal-card"><button class="modal-close" data-close-lead aria-label="Tutup formulir">&times;</button><h2 id="lead-title">Mulai project brief</h2><p>Berikan konteks singkat. Form ini akan menyiapkan email untuk tim DevPro.</p><form data-lead-form><div class="form-grid"><div class="field"><label for="name">Nama</label><input id="name" name="name" required autocomplete="name"></div><div class="field"><label for="company">Perusahaan</label><input id="company" name="company" required autocomplete="organization"></div><div class="field"><label for="email">Email atau telepon</label><input id="email" name="email" required autocomplete="email"></div><div class="field"><label for="service">Area kebutuhan</label><select id="service" name="service"><option>Enterprise Network</option><option>ISP Business Solution</option><option>Managed Connectivity</option><option>Infrastructure & Devices</option><option>Data Center</option><option>Technology Integration</option><option>Masih perlu dipetakan</option></select></div><div class="field full"><label for="needs">Ringkasan kebutuhan</label><textarea id="needs" name="needs" required placeholder="Contoh: membuka site baru, memperbaiki reliabilitas koneksi, atau menyusun arsitektur jaringan."></textarea></div></div><button class="button button-primary" type="submit">Kirim project brief</button><p class="form-status" data-form-status aria-live="polite"></p><p class="form-note">Dengan mengirimkan form, aplikasi email Anda akan dibuka dengan project brief yang sudah disiapkan.</p></form></div></div>
-  <script src="assets/js/site.js" defer></script><script src="assets/js/whatsapp.js" defer></script>
-</body></html>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="DevPro beranda"><img src="/assets/images/logo/devpro-logo.png" alt="DevPro" width="150" height="60" loading="lazy"></a>
+        <p>Business Technology &amp; Network Infrastructure Partner untuk konektivitas dan operasi bisnis.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Navigasi solusi">
+        <a href="network.html">Enterprise Network</a><a href="isp.html">ISP Business Solution</a><a href="starlink.html">Managed Connectivity</a><a href="datacenter.html">Data Center</a><a href="integration.html">Technology Integration</a>
+      </nav>
+      <div class="footer-contact">
+        <a href="mailto:contact@devpro.co.id">contact@devpro.co.id</a>
+        <a data-whatsapp-footer href="https://wa.me/62822104060?text=Halo%20DevPro%2C%20saya%20ingin%20mendiskusikan%20kebutuhan%20infrastruktur%20teknologi%20dan%20jaringan." target="_blank" rel="noopener noreferrer">Diskusi via WhatsApp</a>
+        <button class="button button-plain" data-open-lead>Kirim project brief</button>
+      </div>
+      <div class="footer-bottom">&copy; 2024 DevPro. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="mobile-conversion" data-sticky-conversion aria-hidden="true" inert>
+    <a href="https://wa.me/62822104060?text=Halo%20DevPro%2C%20saya%20ingin%20konsultasi%20mengenai%20kebutuhan%20internet%20bisnis%20dan%20jaringan." target="_blank" rel="noopener noreferrer" tabindex="-1">Mulai konsultasi</a>
+  </div>
+
+  <div class="modal" data-lead-modal aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="lead-title">
+    <div class="modal-card">
+      <button class="modal-close" data-close-lead aria-label="Tutup formulir">×</button>
+      <h2 id="lead-title">Kirim project brief</h2>
+      <p>Berikan konteks singkat. Form ini akan menyiapkan email untuk tim DevPro.</p>
+      <form data-lead-form>
+        <div class="form-grid">
+          <div class="field"><label for="name">Nama</label><input id="name" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="company">Perusahaan</label><input id="company" name="company" required autocomplete="organization"></div>
+          <div class="field"><label for="email">Email atau telepon</label><input id="email" name="email" required autocomplete="email"></div>
+          <div class="field"><label for="service">Area kebutuhan</label><select id="service" name="service"><option>Enterprise Network</option><option>ISP Business Solution</option><option>Managed Connectivity</option><option>Infrastructure &amp; Devices</option><option>Data Center</option><option>Technology Integration</option><option>Masih perlu dipetakan</option></select></div>
+          <div class="field full"><label for="needs">Ringkasan kebutuhan</label><textarea id="needs" name="needs" required placeholder="Contoh: membuka site baru, memperbaiki reliabilitas koneksi, atau menyusun arsitektur jaringan."></textarea></div>
+        </div>
+        <button class="button button-primary" type="submit">Siapkan email project brief</button>
+        <p class="form-status" data-form-status aria-live="polite"></p>
+        <p class="form-note">Aplikasi email Anda akan dibuka dengan project brief yang sudah disiapkan.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/site.js" defer></script>
+  <script src="assets/js/whatsapp.js" defer></script>
+</body>
+</html>
