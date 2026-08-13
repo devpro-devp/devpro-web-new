@@ -1,4 +1,4 @@
-# DevPro Website
+﻿# DevPro Website
 
 Static marketing site for DevPro, a Business Technology & Network Infrastructure Partner.
 
@@ -11,12 +11,12 @@ Static marketing site for DevPro, a Business Technology & Network Infrastructure
 
 ## Primary pages
 
-- `index.html` ? positioning, capability overview, FAQ, and conversion path.
-- `network.html` ? enterprise network infrastructure.
-- `isp.html` ? ISP business solution.
-- `starlink.html` ? managed connectivity for remote sites.
-- `datacenter.html` ? infrastructure, devices, and data-center readiness.
-- `integration.html` ? technology integration.
+- `index.html` — positioning, capability overview, FAQ, and conversion path.
+- `network.html` — enterprise network infrastructure.
+- `isp.html` — ISP business solution.
+- `starlink.html` — managed connectivity for remote sites.
+- `datacenter.html` — infrastructure, devices, and data-center readiness.
+- `integration.html` — technology integration.
 
 ## Deployment notes
 
